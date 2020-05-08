@@ -11,7 +11,7 @@ setup(
     packages = ['person_extractor'],
     package_dir = {'person_extractor': 'person_extractor'},
     package_data = {'person_extractor': ['README.md', '__init__.py','test/__init__.py','test/data/uk.csv']},
-    version = '0.0.0',
+    version = '3.0.0',
     description = 'Extract people from text',
     long_description=long_description,
     long_description_content_type="text/markdown",
