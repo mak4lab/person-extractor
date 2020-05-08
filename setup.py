@@ -8,9 +8,9 @@ with open(join(root_dir, "README.md")) as f:
 
 setup(
     name = 'person-extractor',
-    packages = ['person-extractor'],
-    package_dir = {'person-extractor': 'person-extractor'},
-    package_data = {'person-extractor': ['__init__.py','test/__init__.py','test/data/uk.csv']},
+    packages = ['person_extractor'],
+    package_dir = {'person_extractor': 'person_extractor'},
+    package_data = {'person_extractor': ['README.md', '__init__.py','test/__init__.py','test/data/uk.csv']},
     version = '0.0.0',
     description = 'Extract people from text',
     long_description=long_description,
