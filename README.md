@@ -2,12 +2,15 @@
 Work in Progress: Identify People's Names in Text
 
 # usage
+You initialize a PersonExtractor with a path to a CSV of names with each column a language.
+You can create a csv through [Wikinames](https://github.com/mak4lab/wikinames).
+
 ```python
 from person_extractor import PersonExtractor
 
 text = "John Doe and Jane Doe live in Springfield"
 
-extractor = PersonExtractor()
+extractor = PersonExtractor(data="names.csv")
 
 people = extractor.extract(text)
 ```
