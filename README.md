@@ -8,7 +8,7 @@ You can create a csv through [Wikinames](https://github.com/mak4lab/wikinames).
 ```python
 from person_extractor import PersonExtractor
 
-text = "John Doe and Jane Doe live in Springfield"
+text = "Але дістатися на роботу працівникам цих бізнесів, якщо у них немає власного автомобіля або грошей на таксі чи корпоративну розвозку, стане справжньою проблемою, прогнозує політолог Микола Давидюк."
 
 extractor = PersonExtractor(data="names.csv")
 
@@ -17,10 +17,17 @@ people = extractor.extract(text)
 
 extract returns a list of objects:
 ```python
-[
-    { "text": "John Doe", "start": 0, "end": 7 },
-    { "text": "Jane Doe", "start": 13, "end": 20 }
-]
+    [
+        {
+            'start': 336,
+            'end': 343,
+            'text': 'Давидюк',
+            'spellings': {
+                'en': 'Davidyuk',
+                'uk': 'Давидюк'
+            }
+        }
+    ]
 ```
 
 # test
